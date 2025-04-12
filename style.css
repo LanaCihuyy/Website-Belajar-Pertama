@@ -1,0 +1,134 @@
+body {
+    height: 100%;
+    margin: 0;
+    position: relative;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #ffe4c4;
+    position: fixed;
+    transition: background-color 0.3s ease;
+}
+
+.count-container {
+    width: 200px;
+    height: 100px;
+    background-color: #d2bf9b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+}
+
+.button {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: calc(50% + 70px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.color-picker {
+    width: 100%;
+    height: 100px;
+    background-color: #e6c194;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pilih-warna {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+
+.the-color {
+    position: absolute;
+    top: 6px;
+    left: 130px;
+    background-color: transparent;
+    color:white;
+    border: 1pxsolid #ccc;
+    outline: none;
+    cursor: pointer;
+}
+
+.pick-color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.pick-color:hover {
+    /* background-color: cornsilk; */
+    transform: translateY(-1px);
+}
+
+.reset-color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 110px;
+    cursor: pointer;
+    transition: 0.3s ease, transform 0.2s;
+}
+
+.reset-color:hover {
+    transform: translateY(-1px);
+}
+
+.input-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 220px;
+}
+
+.btn-setAngka {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 3px;
+}
+
+.set-number {
+    position: relative;
+    transition: 0.3s ease, transform 0.3s;
+    outline: none;
+}
+
+.set-number:focus {
+    border: 1px solid #194351;
+    box-shadow: 0 0 8px #164555;
+    border-color: rgb(6, 28, 33);
+    transform: translateY(-2px);
+}

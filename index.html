@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Greatest Web</title>
+</head>
+<body>
+    <div class="container" id="color">
+        <div class="count-container" id="countColor">
+            <h1 class="angka">Angka: <span id="angka">0</span></h1>
+        </div>
+        <div class="button">
+            <button onclick="tambahAngka()">Tambah</button>
+            <button onclick="kurangAngka()">Kurangi</button>
+            <button onclick="resetAngka()">Reset</button>
+        </div>
+        <div class="input-number">
+            <input type="number" min="0" id="inputAngka" placeholder="Masukkan angka" class="set-number"/>
+            <button onclick="setAngka()" class="btn-setAngka">Set angka</button>
+        </div>
+        <div class="color-picker">
+            <label for="warna" class="pilih-warna">Pilih warna:</label>
+            <input type="color" id="warna" value="#ff0000" class="the-color">
+            <button onclick="ubahWarna()" class="pick-color">Ubah Warna</button>
+            <button onclick="resetWarna()" class="reset-color">Reset Warna</button>
+        </div>
+    </div>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
+</body>
+</html>
